@@ -27,6 +27,7 @@ See [docs/your-files.md] for more.
 Links:
 
 - [ml_04_case.ipynb](notebooks/ml_04_regression_jaya.ipynb)
+- [ml_04_regression_p5.ipynb](notebooks/ml_04_regression_p5.ipynb)
 
 ## Working Files
 
