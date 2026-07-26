@@ -26,7 +26,7 @@ See [docs/your-files.md] for more.
 
 Links:
 
-- [ml_04_case.ipynb](notebooks/ml_04_case.ipynb)
+- [ml_04_case.ipynb](notebooks/ml_04_regression_jaya.ipynb)
 
 ## Working Files
 
@@ -84,7 +84,7 @@ open a machine terminal in your `Repos` folder:
 
 ```shell
 # Replace username with YOUR GitHub username.
-git clone https://github.com/username/ml-04-regression
+git clone https://github.com/jaya-srini/ml-04-regression
 
 cd ml-04-regression
 code .
@@ -164,6 +164,8 @@ Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 | INFO | ML | Executed successfully!
 | INFO | ML | ========================
 ```
+## Phase 4
+Added a scatter plot of actual vs. predicted values (in addition to the residual plot).
 
 ## Findings and Visuals
 
