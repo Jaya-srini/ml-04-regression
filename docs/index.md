@@ -37,9 +37,22 @@ Was it easy, or surprisingly challenging and why do you think so?
 
 ## Phase 5. Custom Project
 
-Describe your custom project and how you made your modeling decisions.
+It predicts car's fuel economy from mechanical specs using seaborn mpg dataset and compares different regression models. Run using kernel - select the python interpretor the .venv environment and hit run all.
 
-Be specific about what changed from the example project.
+Imports — loads pandas, numpy, matplotlib, seaborn, and the scikit-learn pieces needed (LinearRegression, ElasticNet, PolynomialFeatures, and the MAE/RMSE/R² metric functions).
+
+Load & prepare data — pulls the built-in mpg dataset (cars from the 1970s–80s), then picks mpg as the target and six numeric columns — cylinders, displacement, horsepower, weight, acceleration, model_year — as the features. Rows with missing values in those columns get dropped.
+
+Train/test split — holds out 20% of the data as a test set the models never see during training, so the evaluation numbers reflect genuine predictive skill rather than memorization.
+
+Fit three models on the training data:
+
+Plain Linear Regression (baseline, one straight-line fit through all 6 features).
+ElasticNet — a regularized version of linear regression that shrinks less-useful feature weights toward zero.
+Polynomial (degree 2) + ElasticNet — first expands the 6 features into all their squares and pairwise products, then fits ElasticNet on that bigger feature set, so it can capture curved/interaction effects a straight line can't.
+Compare results — a table of MAE, RMSE, and R² (computed on the test set) for each of the three models, so you can see which one actually generalizes best.
+
+Visualize — for whichever model had the lowest test RMSE, it draws an actual-vs-predicted scatter plot (points near the diagonal = good predictions) and a residual plot (random scatter around zero = no leftover pattern the model missed).
 
 ### Basis and Data
 
